@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>DiscordBot Builder</title>
+        <link rel="stylesheet" href="./stylesheets/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>DiscordBot Builder</h1>
+            <button id="select-file">Select JSON File</button>
+            <button id="start-bot" class="start-button" style="display: none;">Start Bot</button>
+            <button id="stop-bot" class="stop-button" style="display: none;">Stop Bot</button>
+
+            <p id="status"></p>
+        </div>
+        <p id="filepath">No file selected</p>
+        <script>
+            document.getElementById('select-file').addEventListener('click', () => {
+                window.electron.openFileDialog();
+                document.getElementById('select-file').style.display = 'none';
+            });
+
+            document.getElementById('start-bot').addEventListener('click', () => {
+                window.electron.openFileDialog();
+                document.getElementById('status').innerText = 'Bot is active';
+                document.getElementById('start-bot').style.display = 'none';
+                document.getElementById('stop-bot').style.display = 'inline-block';
+            });
+
+
+            document.getElementById('stop-bot').addEventListener('click', () => {
+                window.electron.stopBot();
+                document.getElementById('status').innerText = 'Bot is stopped';
+                document.getElementById('stop-bot').style.display = 'none';
+                document.getElementById('start-bot').style.display = 'inline-block';
+            });
+
+            window.electron.onFileSelected((filePath) => {
+                if (filePath) {
+                    document.getElementById('status').innerText = 'Bot is active';
+                    document.getElementById('stop-bot').style.display = 'inline-block';
+                }
+                document.getElementById('filepath').innerText = filePath;
+            });
+
+            window.electron.onBotStatus((status) => {
+                document.getElementById('status').innerText = status;
+                if (status.includes('stopped')) {
+                    document.getElementById('stop-bot').style.display = 'none';
+                }
+            });
+        </script>
+    </body>
+</html>
