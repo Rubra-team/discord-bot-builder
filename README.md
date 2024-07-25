@@ -1,6 +1,7 @@
 <div align="center">
 
-[<img src="https://github.com/user-attachments/assets/5dd55874-a557-4bb7-986f-ebfb74a28277" width="144"/>](https://hydralauncher.site)
+
+[<img src="https://github.com/user-attachments/assets/fadfebb9-b1a1-4716-990d-6bf9061ff4ab" width="144"/>]()
 
   <h1 align="center">DiscordBot Builder</h1>
   
@@ -48,13 +49,17 @@ $ pip install -r requirements.txt
 
 #### 3. Execute o launcher do projeto:
 
+
 ```
 $ make run
 ```
 
 ## 🚀 Uso
-1. ![Screenshot_20240724_181256](https://github.com/user-attachments/assets/21a85d9b-ff58-492d-b67f-747a94732783)
-2. ![Screenshot_20240724_181324](https://github.com/user-attachments/assets/cef32cbb-a34c-4c83-9116-7a24809cb582)
+1. ![Screenshot_20240725_113110](https://github.com/user-attachments/assets/4452ef06-eb5c-4bde-9e60-500929755c05)
+2. ![Screenshot_20240725_113157](https://github.com/user-attachments/assets/32a82ae0-7632-4934-8f1c-4a7ec6118f62)
+3. ![Screenshot_20240725_113310](https://github.com/user-attachments/assets/143efb77-fce9-4006-afde-af3245a634e7)
+
+
 
 
 Criar setup para o bot > [GERADOR](https://discord-bot-builder.fly.dev/)
