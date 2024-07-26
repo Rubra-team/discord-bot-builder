@@ -22,8 +22,8 @@
 
 ## 👍 Requisitos
 
-![Python](https://img.shields.io/badge/nodeJs-%23CC3.svg?style=for-the-badge&logo=node&logoColor=white)
-
+![Python](https://img.shields.io/badge/nodeJs-%23CC.svg?style=for-the-badge&logo=node&logoColor=white)
+![electron](https://img.shields.io/badge/electron-%234CC.svg?style=for-the-badge&logo=electron&logoColor=white)
 ## 💻 Contribuições para o projeto:
 
 Siga os passos abaixo para configurar o ambiente de desenvolvimento:
@@ -38,20 +38,19 @@ $ git clone https://github.com/Rubra-team/discordBot-builder-bot.git
 #### 2. Instale todas as dependências:
 
 ```
-$ sudo apt-get install pip
+$ sudo apt-get install npm
 ```
 ```
-$ pip install -r requirements.txt
+$ npm i
 ```
 > !
-> baixe as dependências do projeto .
- execute separadamente!
+> baixe as dependências do projeto 
 
 #### 3. Execute o launcher do projeto:
 
 
 ```
-$ make run
+$ npm start
 ```
 
 ## 🚀 Uso
